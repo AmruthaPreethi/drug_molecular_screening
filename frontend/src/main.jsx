@@ -100,7 +100,67 @@ const fallback = [
       { element: 'O', x: 0 },
       { element: 'H', x: 0.76 }
     ]
-  }
+  },
+  { id: 'Benzene', formula: 'C₆H₆', name: 'Benzene', qubits: 12, atoms: [
+    { element: 'C', x: -1.45 }, { element: 'C', x: -0.70 }, { element: 'C', x: 0.70 },
+    { element: 'C', x: 1.45 }, { element: 'C', x: 0.70 }, { element: 'C', x: -0.70 },
+    { element: 'H', x: -2.50 }, { element: 'H', x: -1.30 }, { element: 'H', x: 1.30 },
+    { element: 'H', x: 2.50 }, { element: 'H', x: 1.30 }, { element: 'H', x: -1.30 }
+  ] },
+  { id: 'Aspirin', formula: 'C₉H₈O₄', name: 'Acetylsalicylic acid', qubits: 12, atoms: [
+    { element: 'C', x: -2.8 }, { element: 'C', x: -1.4 }, { element: 'C', x: 2.8 }, { element: 'C', x: 1.4 },
+    { element: 'O', x: -3.6 }, { element: 'O', x: 1.4 }, { element: 'O', x: 3.6 }, { element: 'O', x: -0.2 },
+    { element: 'C', x: -0.2 }, { element: 'C', x: 1.8 }, { element: 'C', x: 0.4 }, { element: 'C', x: -1.6 },
+    { element: 'H', x: -3.2 }, { element: 'H', x: 3.2 }, { element: 'H', x: 0.6 }, { element: 'H', x: -2.4 },
+    { element: 'H', x: 1.6 }, { element: 'H', x: -1.2 }, { element: 'H', x: 0.2 }
+  ] },
+  { id: 'Paracetamol', formula: 'C₈H₉NO₂', name: 'Acetaminophen', qubits: 12, atoms: [
+    { element: 'C', x: -2.2 }, { element: 'C', x: -1.0 }, { element: 'C', x: 1.0 }, { element: 'C', x: 2.2 },
+    { element: 'N', x: 0.0 }, { element: 'O', x: 3.2 }, { element: 'O', x: -3.2 }, { element: 'C', x: 0.0 },
+    { element: 'H', x: -1.6 }, { element: 'H', x: 1.6 }, { element: 'H', x: -3.0 }, { element: 'H', x: 3.0 },
+    { element: 'H', x: -2.8 }, { element: 'H', x: 0.8 }, { element: 'H', x: -0.8 }, { element: 'C', x: 1.4 },
+    { element: 'H', x: 2.0 }
+  ] },
+  { id: 'Caffeine', formula: 'C₈H₁₀N₄O₂', name: 'Caffeine', qubits: 12, atoms: [
+    { element: 'C', x: -2.4 }, { element: 'C', x: -1.0 }, { element: 'C', x: 1.0 }, { element: 'C', x: 2.4 },
+    { element: 'N', x: -1.8 }, { element: 'N', x: 0.0 }, { element: 'N', x: 1.8 }, { element: 'N', x: 0.8 },
+    { element: 'O', x: -3.6 }, { element: 'O', x: 3.6 }, { element: 'C', x: 0.0 }, { element: 'C', x: 2.0 },
+    { element: 'C', x: -0.8 }, { element: 'C', x: 1.2 }, { element: 'H', x: 0.4 }, { element: 'H', x: -2.6 },
+    { element: 'H', x: 1.6 }, { element: 'H', x: -1.2 }, { element: 'H', x: 2.8 }, { element: 'H', x: -0.2 },
+    { element: 'H', x: 1.8 }, { element: 'H', x: -3.2 }
+  ] },
+  { id: 'Ibuprofen', formula: 'C₁₃H₁₈O₂', name: 'Ibuprofen', qubits: 12, atoms: [
+    { element: 'C', x: -3.0 }, { element: 'C', x: -1.8 }, { element: 'C', x: -0.6 }, { element: 'C', x: 0.6 },
+    { element: 'C', x: 1.8 }, { element: 'C', x: 3.0 }, { element: 'C', x: 4.2 }, { element: 'C', x: -2.4 },
+    { element: 'C', x: -4.2 }, { element: 'O', x: 3.6 }, { element: 'O', x: 4.8 }, { element: 'C', x: 2.4 },
+    { element: 'C', x: 1.2 }, { element: 'H', x: -1.2 }, { element: 'H', x: -3.6 }, { element: 'H', x: -4.8 },
+    { element: 'H', x: 2.4 }, { element: 'H', x: 3.4 }, { element: 'H', x: 4.6 }, { element: 'H', x: 5.2 },
+    { element: 'H', x: 0.6 }, { element: 'H', x: 2.0 }, { element: 'H', x: 0.2 }, { element: 'H', x: -2.0 },
+    { element: 'H', x: -1.4 }, { element: 'H', x: -3.0 }, { element: 'H', x: 1.0 }, { element: 'H', x: 3.0 }
+  ] },
+  { id: 'Amoxicillin', formula: 'C₁₆H₁₉N₃O₅S', name: 'Amoxicillin', qubits: 12, atoms: [
+    { element: 'C', x: -3.4 }, { element: 'C', x: -2.0 }, { element: 'C', x: 2.0 }, { element: 'C', x: 3.4 },
+    { element: 'N', x: 0.0 }, { element: 'N', x: 1.0 }, { element: 'N', x: -1.4 }, { element: 'O', x: 3.8 },
+    { element: 'O', x: -3.8 }, { element: 'S', x: 2.6 }, { element: 'O', x: 0.4 }, { element: 'O', x: -0.8 },
+    { element: 'C', x: 1.8 }, { element: 'C', x: 0.6 }, { element: 'C', x: -1.8 }, { element: 'C', x: -0.4 },
+    { element: 'C', x: 2.4 }, { element: 'C', x: 4.0 }, { element: 'H', x: 1.2 }, { element: 'H', x: -2.6 },
+    { element: 'H', x: 3.2 }, { element: 'H', x: -1.2 }, { element: 'H', x: 4.6 }, { element: 'H', x: 2.0 },
+    { element: 'H', x: 0.0 }, { element: 'H', x: -0.2 }, { element: 'H', x: 1.6 }
+  ] },
+  { id: 'Metformin', formula: 'C₄H₁₁N₅', name: 'Metformin', qubits: 12, atoms: [
+    { element: 'C', x: -2.0 }, { element: 'C', x: 0.0 }, { element: 'C', x: 2.0 }, { element: 'C', x: 1.0 },
+    { element: 'N', x: -1.0 }, { element: 'N', x: 0.0 }, { element: 'N', x: 2.0 }, { element: 'N', x: 3.0 },
+    { element: 'N', x: -2.4 }, { element: 'H', x: -3.0 }, { element: 'H', x: 1.2 }, { element: 'H', x: 0.4 },
+    { element: 'H', x: -1.6 }, { element: 'H', x: 2.4 }, { element: 'H', x: 2.0 }, { element: 'H', x: -0.6 },
+    { element: 'H', x: 1.8 }, { element: 'H', x: 3.6 }, { element: 'H', x: -1.0 }
+  ] },
+  { id: 'VitaminC', formula: 'C₆H₈O₆', name: 'Ascorbic acid', qubits: 12, atoms: [
+    { element: 'C', x: -2.6 }, { element: 'C', x: -1.4 }, { element: 'C', x: 1.4 }, { element: 'C', x: 2.6 },
+    { element: 'O', x: -3.4 }, { element: 'O', x: 3.4 }, { element: 'O', x: 0.2 }, { element: 'O', x: -0.8 },
+    { element: 'O', x: 2.0 }, { element: 'O', x: -2.0 }, { element: 'C', x: 0.2 }, { element: 'C', x: -0.2 },
+    { element: 'H', x: -3.0 }, { element: 'H', x: -1.0 }, { element: 'H', x: 1.0 }, { element: 'H', x: 3.0 },
+    { element: 'H', x: 2.4 }, { element: 'H', x: -2.4 }, { element: 'H', x: 0.4 }
+  ] }
 ];
 
 
@@ -108,7 +168,23 @@ const fallback = [
 // MOLECULE VISUALIZATION
 // ======================================================
 
-function Molecule({ atoms = [], active = true }) {
+function bondOrder(elemA, elemB) {
+  const pair = [elemA, elemB].sort().join('');
+
+  // Triple bonds (e.g., N≡N, C≡N, C≡C)
+  if (pair === 'NN' || pair === 'CN') return 3;
+
+  // Common double bonds in drug molecules: C=O, C=N, C=S, S=O, N=O
+  if (pair === 'CO' || pair === 'CN' || pair === 'CS' || pair === 'OS' || pair === 'SO') return 2;
+
+  return 1;
+}
+
+function elementClass(elem) {
+  return 'atom ' + elem.toLowerCase();
+}
+
+function Molecule({ atoms = [], active = true, zoom = false }) {
 
   if (!atoms.length) {
     return <div className="molecule" />;
@@ -120,28 +196,37 @@ function Molecule({ atoms = [], active = true }) {
   const range = max - min || 1;
 
   return (
-    <div className="molecule">
+    <div className={'molecule' + (zoom ? ' zoom' : '')}>
 
       {atoms.map((a, i) => (
-
         <React.Fragment key={i}>
 
-          {i > 0 && (
-            <i
-              className="bond"
-              style={{
-                left: `${16 + ((atoms[i - 1].x - min) / range) * 68}%`,
-                width: `${((a.x - atoms[i - 1].x) / range) * 68}%`
-              }}
-            />
-          )}
+          {i > 0 && (() => {
+            const n = bondOrder(atoms[i - 1].element, a.element);
+            const left = 16 + ((atoms[i - 1].x - min) / range) * 68;
+            const width = ((a.x - atoms[i - 1].x) / range) * 68;
+            const gap = n > 1 ? 3.5 : 0;
+
+            return (
+              <span
+                className={'bondgroup bond' + n + (active ? ' scanning' : '')}
+                style={{ left: `${left}%`, width: `${width}%` }}
+              >
+                {Array.from({ length: n }, (_, k) => (
+                  <i
+                    key={k}
+                    className="bond"
+                    style={{
+                      top: `${50 + (k - (n - 1) / 2) * gap}px`
+                    }}
+                  />
+                ))}
+              </span>
+            );
+          })()}
 
           <b
-            className={
-              'atom ' +
-              a.element.toLowerCase() +
-              (active ? ' scanning' : '')
-            }
+            className={elementClass(a.element) + (active ? ' scanning' : '')}
             style={{
               left: `${16 + ((a.x - min) / range) * 68}%`
             }}
@@ -150,7 +235,6 @@ function Molecule({ atoms = [], active = true }) {
           </b>
 
         </React.Fragment>
-
       ))}
 
     </div>
@@ -589,6 +673,12 @@ function App() {
             CANDIDATE LIBRARY
           </p>
 
+          <p className="demo-note">
+            {molecules.length} demo molecules · educational VQE benchmarks
+          </p>
+
+
+          <div className="candidate-grid">
 
           {molecules.map(m => (
 
@@ -642,8 +732,10 @@ function App() {
 
           ))}
 
+          </div>
 
-          {/* RUN BUTTON */}
+
+          {/* RUN BUTTON (LIBRARY) */}
 
           <button
             disabled={
@@ -767,6 +859,30 @@ function App() {
               </div>
 
             </div>
+
+            <button
+              disabled={
+                !selected.length ||
+                loading
+              }
+
+              className="run compact"
+
+              onClick={run}
+            >
+
+              <Play
+                fill="currentColor"
+                size={16}
+              />
+
+              {
+                loading
+                  ? 'Starting…'
+                  : 'Run screening'
+              }
+
+            </button>
 
           </div>
 
